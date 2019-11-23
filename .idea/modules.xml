@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/boot-order-service-consumer/boot-order-service-consumer.iml" filepath="$PROJECT_DIR$/boot-order-service-consumer/boot-order-service-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/boot-user-service-proviter/boot-user-service-proviter.iml" filepath="$PROJECT_DIR$/boot-user-service-proviter/boot-user-service-proviter.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/dubbo_project.iml" filepath="$PROJECT_DIR$/.idea/dubbo_project.iml" />
       <module fileurl="file://$PROJECT_DIR$/gmallinterface/gmall-interface.iml" filepath="$PROJECT_DIR$/gmallinterface/gmall-interface.iml" />
       <module fileurl="file://$PROJECT_DIR$/orderserviceconsumer/order-service-consumer.iml" filepath="$PROJECT_DIR$/orderserviceconsumer/order-service-consumer.iml" />

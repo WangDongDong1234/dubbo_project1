@@ -6,12 +6,16 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="boot-order-service-consumer" />
+        <module name="boot-user-service-proviter" />
         <module name="gmall-interface" />
         <module name="order-service-consumer" />
         <module name="user-service-provider" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="boot-order-service-consumer" target="1.8" />
+      <module name="boot-user-service-proviter" target="1.8" />
       <module name="gmall-interface" target="1.8" />
       <module name="order-service-consumer" target="1.8" />
       <module name="user-service-provider" target="1.8" />
