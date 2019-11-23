@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.atguigu.gmall</groupId>
+    <artifactId>order-service-consumer</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.atguigu.gmall</groupId>
+            <artifactId>gmall-interface</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
+        <!-- 引入dubbo -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>dubbo</artifactId>
+            <version>2.6.2</version>
+        </dependency>
+
+        <!-- 由于我们使用zookeeper作为注册中心，所以需要操作zookeeper
+            dubbo 2.6以前的版本引入zkclient操作zookeeper
+            dubbo 2.6及以后的版本引入curator操作zookeeper
+            下面两个zk客户端根据dubbo版本2选1即可
+        -->
+        <!--<dependency>-->
+        <!--<groupId>com.101tec</groupId>-->
+        <!--<artifactId>zkclient</artifactId>-->
+        <!--<version>0.10</version>-->
+        <!--</dependency>-->
+        <!-- curator-framework -->
+        <dependency>
+            <groupId>org.apache.curator</groupId>
+            <artifactId>curator-framework</artifactId>
+            <version>2.12.0</version>
+        </dependency>
+    </dependencies>
+
+</project>
