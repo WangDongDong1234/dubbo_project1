@@ -25,10 +25,11 @@
     <!-- retries="":重试次数，不包含第一次调用，0代表不重试-->
     <!-- 幂等（设置重试次数）【查询、删除、修改】、非幂等（不能设置重试次数）【新增】 -->
     <dubbo:reference interface="com.atguigu.gmall.service.UserService"
-                     id="userService" timeout="5000" retries="3" version="*">
+                     id="userService" timeout="5000" retries="3" version="*" stub="com.atguigu.gmall.service.impl.UserServiceStub">
         <!-- <dubbo:method name="getUserAddressList" timeout="1000"></dubbo:method> -->
     </dubbo:reference>
-    <!-- 配置当前消费者的统一规则：所有的服务都不检查 -->
+    <!-- timeout设置超时时间，默认是1000毫秒，如果超过这个时间不处理-->
+    <!-- 配置当前消费者的统一规则：所有的服务都不检查，如果你配置成ture的话，如果注册中心没有这个服务，会报错 -->
     <dubbo:consumer check="false" timeout="5000"></dubbo:consumer>
 
     <!-- 连接监控中心的两种方式-->
