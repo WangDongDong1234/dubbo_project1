@@ -19,7 +19,7 @@
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>dubbo</artifactId>
-            <version>2.6.2</version>
+            <version>2.6.12</version>
         </dependency>
 
         <!-- 由于我们使用zookeeper作为注册中心，所以需要操作zookeeper
